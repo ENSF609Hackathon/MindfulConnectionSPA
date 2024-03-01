@@ -58,8 +58,8 @@ class Root extends Component{
       return(
           <BrowserRouter basename={'/'}>
               <Switch>
-                    <Route exact path={`${process.env.PUBLIC_URL}/`} component={Demo}/>
-                    <Route exact path={`${process.env.PUBLIC_URL}/home`} component={Home}/>
+                    {/*<Route exact path={`${process.env.PUBLIC_URL}/`} component={Demo}/>*/}
+                    <Route exact path={`/`} component={Home}/>
 
                     <Route exact path={`${process.env.PUBLIC_URL}/defaultbadge`} component={Badge}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/defaultgroup`} component={Group}/>
