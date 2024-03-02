@@ -13,7 +13,7 @@ const Settings = () => {
 
     const { logout } = useAuth0()
     const handleLogout = () => {
-        logout({ returnTo: window.location.origin });
+        logout();
     };
 
     return (
