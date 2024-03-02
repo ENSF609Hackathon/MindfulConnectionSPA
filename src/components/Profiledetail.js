@@ -23,7 +23,7 @@ class Profiledetail extends Component {
     displayContact = (contact) => {
         return <div>
                 <div>
-                        {`Name: ${contact.contactName}`}
+                    {`Name: ${contact.contactName}`}
                 </div>
                 <div>
                     {`Email: ${contact.email}`}
