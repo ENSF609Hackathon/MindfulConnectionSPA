@@ -18,7 +18,6 @@ import Notification from "./pages/Notification";
 import Helpbox from "./pages/Helpbox";
 
 import {ResidenceList} from "./pages/ResidenceList";
-import {HomepageResources} from "./pages/Resources";
 import { MemoryMood } from "./pages/MemoryMood";
 
 import Register from "./pages/Register";
