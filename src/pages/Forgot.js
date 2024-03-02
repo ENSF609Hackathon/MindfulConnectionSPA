@@ -11,7 +11,7 @@ class Forgot extends Component {
                             <a href="/"><i className="feather-zap text-success display1-size me-2 ms-0"></i><span className="d-inline-block fredoka-font ls-3 fw-600 text-current font-xxl logo-text mb-0">Sociala. </span> </a>
                             <button className="nav-menu me-0 ms-auto"></button>
             
-                            <a href="/login" className="header-btn d-none d-lg-block bg-dark fw-500 text-white font-xsss p-3 ms-auto w100 text-center lh-20 rounded-xl">Login</a>
+                            <a href="/src/pages/Login" className="header-btn d-none d-lg-block bg-dark fw-500 text-white font-xsss p-3 ms-auto w100 text-center lh-20 rounded-xl">Login</a>
                             <a href="/register" className="header-btn d-none d-lg-block bg-current fw-500 text-white font-xsss p-3 ms-2 w100 text-center lh-20 rounded-xl">Register</a>
                         </div>
                     </div>
@@ -43,7 +43,7 @@ class Forgot extends Component {
                                     </form>
                                     
                                     <div className="col-sm-12 p-0 text-left">
-                                        <div className="form-group mb-1"><a href="/login" className="form-control text-center style2-input text-white fw-600 bg-dark border-0 p-0 ">Change Password</a></div>
+                                        <div className="form-group mb-1"><a href="/src/pages/Login" className="form-control text-center style2-input text-white fw-600 bg-dark border-0 p-0 ">Change Password</a></div>
                                         
                                     </div>
                                     
