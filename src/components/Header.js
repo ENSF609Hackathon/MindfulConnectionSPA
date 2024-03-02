@@ -4,6 +4,7 @@ import logo from '../assets/Logo.jpg'
 
 import Darkbutton from '../components/Darkbutton';
 import Leftnav from './Leftnav';
+import { useAuth0  } from '@auth0/auth0-react';
 
 class Header extends Component {
     state = {
@@ -72,23 +73,23 @@ class Header extends Component {
                 </div>
                 <Link to="/defaultmessage" className="p-2 text-center ms-3 menu-icon chat-active-btn"><i className="feather-message-square font-xl text-current"></i></Link>
                 <Darkbutton />
-                <Link to="/defaultsettings" className="p-0 ms-3 menu-icon"><img src="assets/images/user.png" alt="user" className="w40 mt--1" /></Link>
+                <Link to="/settings" className="p-0 ms-3 menu-icon"><img src="assets/images/user.png" alt="user" className="w40 mt--1" /></Link>
 
                 <Leftnav navClass={navClass}/>
                 
-                <div className={`app-header-search ${searchClass}`}>
-                    <form className="search-form">
-                        <div className="form-group searchbox mb-0 border-0 p-1">
-                            <input type="text" className="form-control border-0" placeholder="Search..." />
-                            <i className="input-icon">
-                                <ion-icon name="search-outline" role="img" className="md hydrated" aria-label="search outline"></ion-icon>
-                            </i>
-                            <span className="ms-1 mt-1 d-inline-block close searchbox-close">
-                                <i className="ti-close font-xs" onClick={this.toggleActive}></i>
-                            </span>
-                        </div>
-                    </form>
-                </div>
+                {/*<div className={`app-header-search ${searchClass}`}>*/}
+                {/*    <form className="search-form">*/}
+                {/*        <div className="form-group searchbox mb-0 border-0 p-1">*/}
+                {/*            <input type="text" className="form-control border-0" placeholder="Search..." />*/}
+                {/*            <i className="input-icon">*/}
+                {/*                <ion-icon name="search-outline" role="img" className="md hydrated" aria-label="search outline"></ion-icon>*/}
+                {/*            </i>*/}
+                {/*            <span className="ms-1 mt-1 d-inline-block close searchbox-close">*/}
+                {/*                <i className="ti-close font-xs" onClick={this.toggleActive}></i>*/}
+                {/*            </span>*/}
+                {/*        </div>*/}
+                {/*    </form>*/}
+                {/*</div>*/}
                 
             </div>
         );
