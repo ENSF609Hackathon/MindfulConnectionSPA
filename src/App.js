@@ -19,6 +19,8 @@ import Helpbox from "./pages/Helpbox";
 
 import {ResidenceList} from "./pages/ResidenceList";
 import { MemoryMood } from "./pages/MemoryMood";
+import { Medications } from "./pages/Medications";
+import CMAI from "./pages/CMAI";
 
 import Register from "./pages/Register";
 import Forgot from "./pages/Forgot";
@@ -77,9 +79,11 @@ const App = () => {
                 <Route exact path={`/caring`} component={ResidenceList}/>
                 <Route exact path={'/memorymood'} component={MemoryMood}/>
                 <Route exact path={`${process.env.PUBLIC_URL}/knowledge`} component={HomepageResources}/>
+                <Route exact path={`${process.env.PUBLIC_URL}/cmai`} component={CMAI}/>
 
                 <Route exact path={`${process.env.PUBLIC_URL}/diary`} component={Diary}/>
                 <Route exact path={`${process.env.PUBLIC_URL}/educational_resources`} component={EducationalResources}/>
+                <Route exact path={`${process.env.PUBLIC_URL}/medications`} component={Medications}/>
 
                 <Route exact path={`${process.env.PUBLIC_URL}/defaultbadge`} component={Badge}/>
                 <Route exact path={`${process.env.PUBLIC_URL}/defaultgroup`} component={Group}/>

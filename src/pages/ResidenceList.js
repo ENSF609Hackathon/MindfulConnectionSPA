@@ -1,6 +1,7 @@
 
 import React, {Fragment} from "react";
 import Header from "../components/Header";
+import Appfooter from "../components/Appfooter"
 import Leftnav from "../components/Leftnav";
 import Residences from "../components/Residences";
 import {Link} from "react-router-dom";

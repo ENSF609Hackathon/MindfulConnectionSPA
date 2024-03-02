@@ -32,7 +32,7 @@ function CMAI(){
                 method: 'POST',
                 headers: { "Content-Type": "application/json" },
                 // patientID = props.userID
-                body: JSON.stringify({"patientId": 2, "q1d": q1d.answerValue, "q1f": q1f.answerValue})
+                body: JSON.stringify({"patientId": 1, "q1d": q1d.answerValue, "q1f": q1f.answerValue})
             })  
         }      
     }
@@ -77,7 +77,7 @@ function CMAI(){
             <QuestionCardCMAI id='Question 28' prompt='Making physical sexual advances' setRating={setRating}/>
             <QuestionCardCMAI id='Question 29' prompt='General Restlessness' setRating={setRating}/>
             <div className="container">
-                <button type='button' className='btn btn-primary mt-3 ml-3' onClick={submitForm}><Link to='/Home'>Submit</Link></button>
+                <button type='button' className='btn btn-primary mt-3 ml-3' onClick={submitForm}><Link to='/userpage/1'>Submit</Link></button>
             </div>
         </div>
     )
