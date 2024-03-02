@@ -12,35 +12,54 @@ import Createpost from '../components/Createpost';
 import Events from '../components/Events';
 import Postview from '../components/Postview';
 import Load from '../components/Load';
+import { getUserById } from "../api/user";
 
 class Userpage extends Component {
+
+    constructor(props){
+        super(props)
+        this.props = props
+        this.state = {
+            user: {},
+            loading: true
+        }
+    }
+
+    componentDidMount() {
+        getUserById(1)
+        .then((response) => {
+            this.setState({ user: response })
+            console.dir(this.state.user)
+        }).catch(error => {
+            console.error(error)
+        })
+    }
+
+
     render() {
+        
         return (
             <Fragment> 
                 <Header />
                 <Leftnav />
                 <Rightchat />
-
-
                 <div className="main-content right-chat-active">
                     <div className="middle-sidebar-bottom">
                         <div className="middle-sidebar-left pe-0">
                             <div className="row">
                                 <div className="col-xl-12 mb-3">
-                                    <ProfilecardThree />
+                                    <ProfilecardThree user={this.state.user} />
                                 </div>
-                                <div className="col-xl-4 col-xxl-3 col-lg-4 pe-0">
-                                    <Profiledetail />
-                                    <Profilephoto />
-                                    <Events />
+                                <div className="col-xl-12 col-xxl-3 col-lg-4 pe-0">
+                                    <Profiledetail user={this.state.user} />
                                 </div>
-                                <div className="col-xl-8 col-xxl-9 col-lg-8">
+                                {/* <div className="col-xl-8 col-xxl-9 col-lg-8">
                                     <Createpost />
                                     <Postview id="32" postvideo="" postimage="post.png" avater="user.png" user="Surfiya Zakir" time="22 min ago" des="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nulla dolor, ornare at commodo non, feugiat non nisi. Phasellus faucibus mollis pharetra. Proin blandit ac massa sed rhoncus." />
                                     <Postview id="31" postvideo="" postimage="post.png" avater="user.png" user="David Goria" time="22 min ago" des="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nulla dolor, ornare at commodo non, feugiat non nisi. Phasellus faucibus mollis pharetra. Proin blandit ac massa sed rhoncus." />
                                     <Postview id="33" postvideo="" postimage="post.png" avater="user.png" user="Anthony Daugloi" time="2 hour ago" des="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nulla dolor, ornare at commodo non, feugiat non nisi. Phasellus faucibus mollis pharetra. Proin blandit ac massa sed rhoncus." />
                                     <Load />
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
