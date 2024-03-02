@@ -49,7 +49,7 @@ const Leftnav = (props) => {
                         <div className="nav-caption fw-600 font-xssss text-grey-500"><span></span> Account</div>
                         <ul className="mb-1">
                             <li className="logo d-none d-xl-block d-lg-block"></li>
-                            <li><Link to="/defaultsettings" className="nav-content-bttn open-font h-auto pt-2 pb-2"><i className="font-sm feather-settings me-3 text-grey-500"></i><span>Settings</span></Link></li>
+                            <li><Link to="/settings" className="nav-content-bttn open-font h-auto pt-2 pb-2"><i className="font-sm feather-settings me-3 text-grey-500"></i><span>Settings</span></Link></li>
                             <li><Link to="/defaultanalytics" className="nav-content-bttn open-font h-auto pt-2 pb-2"><i className="font-sm feather-pie-chart me-3 text-grey-500"></i><span>Analytics</span></Link></li>
                             <li><a href="#" onClick={handleLogout} className="nav-content-bttn open-font h-auto pt-2 pb-2"><i className="font-sm feather-log-out me-3 text-grey-500"></i><span>Logout</span></a></li>
                         </ul>

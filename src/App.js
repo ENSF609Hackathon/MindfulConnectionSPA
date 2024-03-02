@@ -90,7 +90,7 @@ const App = () => {
                 <Route exact path={`${process.env.PUBLIC_URL}/defaultstorie`} component={Storie}/>
                 <Route exact path={`${process.env.PUBLIC_URL}/defaultemailbox`} component={Email}/>
                 <Route exact path={`${process.env.PUBLIC_URL}/defaultemailopen`} component={Emailopen}/>
-                <Route exact path={`${process.env.PUBLIC_URL}/defaultsettings`} component={Settings}/>
+                <Route exact path={`${process.env.PUBLIC_URL}/settings`} component={Settings}/>
                 <Route exact path={`${process.env.PUBLIC_URL}/defaultvideo`} component={Videos}/>
                 <Route exact path={`${process.env.PUBLIC_URL}/defaultanalytics`} component={Analytics}/>
                 <Route exact path={`${process.env.PUBLIC_URL}/accountinformation`} component={Account}/>
