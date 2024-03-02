@@ -28,7 +28,7 @@ function CMAI(){
         let q1f = answers.find(o=> o.questionID === "Question 1F")
         console.log(q1f);
             if((typeof(q1d) !== 'undefined') && (typeof(q1f) !== 'undefined')){
-                fetch('http://localhost:8080/api/CMAI/CMAIForm/', {
+                fetch('https://mindfulconnectionapi.azurewebsites.net/api/CMAI/CMAIForm/', {
                 method: 'POST',
                 headers: { "Content-Type": "application/json" },
                 // patientID = props.userID

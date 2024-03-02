@@ -105,7 +105,7 @@ const App = () => {
                 <Route exact path={`${process.env.PUBLIC_URL}/register`} component={Register}/>
                 <Route exact path={`${process.env.PUBLIC_URL}/forgot`} component={Forgot}/>
                 <Route exact path={`${process.env.PUBLIC_URL}/notfound`} component={Notfound}/>
-                <ProtectedRoute exact path={`${process.env.PUBLIC_URL}/graphs`} component={Graphs} requiredRoles={UserRoles.ProviderOrBetter}/>
+                <ProtectedRoute exact path={`${process.env.PUBLIC_URL}/graphs`} component={Graphs} requiredRoles={UserRoles.PatientOrBetter}/>
 
                 <Route exact path={`${process.env.PUBLIC_URL}/shop1`} component={ShopOne}/>
                 <Route exact path={`${process.env.PUBLIC_URL}/shop2`} component={ShopTwo}/>
