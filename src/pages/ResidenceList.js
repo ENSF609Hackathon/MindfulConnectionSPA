@@ -1,6 +1,7 @@
 import {Link} from "react-router-dom";
 import React from "react";
 import Header from "../components/Header";
+import Appfooter from "../components/Appfooter"
 
 export const ResidenceList = () => {
     return (
@@ -42,6 +43,7 @@ export const ResidenceList = () => {
                     </div>
                 </div>
             </div>
+            <Appfooter />
         </div>
 
     )

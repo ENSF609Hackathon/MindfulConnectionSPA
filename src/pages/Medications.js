@@ -2,6 +2,7 @@ import {Link} from "react-router-dom";
 import React from "react";
 import Header from "../components/Header";
 import {Medication} from "../components/Medication";
+import Appfooter from "../components/Appfooter";
 
 export const Medications = () => {
 
@@ -43,6 +44,7 @@ export const Medications = () => {
                     </div>
                 </div>
             </div>
+            <Appfooter />
         </div>
 
     )
