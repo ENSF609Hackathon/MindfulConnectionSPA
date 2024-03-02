@@ -1,4 +1,4 @@
-import React, { Component , Fragment, useState} from "react";
+import React, {useState} from "react";
 import QuestionCardCMAI from '../components/QuestionCardCMAI';
 
 function CMAI(){
