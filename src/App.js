@@ -117,6 +117,7 @@ const App = () => {
                 <Route exact path={`${process.env.PUBLIC_URL}/defaulthotel`} component={Hotel}/>
                 <Route exact path={`${process.env.PUBLIC_URL}/grouppage`} component={Grouppage}/>
                 <Route exact path={`${process.env.PUBLIC_URL}/userpage`} component={Userpage}/>
+                <Route exact path={`${process.env.PUBLIC_URL}/userpage/:userId`} component={Userpage}/>
                 <Route exact path={`${process.env.PUBLIC_URL}/authorpage`} component={Authorpage}/>
                 <Route exact path={`${process.env.PUBLIC_URL}/comingsoon`} component={Comingsoon}/>
                 <Route exact path={`${process.env.PUBLIC_URL}/defaulthoteldetails`} component={Hotelsingle}/>

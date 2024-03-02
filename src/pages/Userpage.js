@@ -26,7 +26,7 @@ class Userpage extends Component {
     }
 
     componentDidMount() {
-        getUserById(2)
+        getUserById(this.props.match.params.userId || 1)
         .then((response) => {
             this.setState({ user: response })
             console.dir(this.state.user)
@@ -37,6 +37,8 @@ class Userpage extends Component {
 
 
     render() {
+
+        console.log(this.props.match.params.userId)
         
         return (
             <Fragment> 
