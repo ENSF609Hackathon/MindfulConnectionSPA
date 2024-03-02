@@ -38,6 +38,7 @@ import Comingsoon from "./pages/Comingsoon";
 import Hotelsingle from "./pages/Hotelsingle";
 import React from "react";
 import {useAuth0} from "@auth0/auth0-react";
+import Graphs from "./pages/Graphs";
 
 
 const App = () => {
@@ -57,7 +58,7 @@ const App = () => {
     return(
         <BrowserRouter basename={'/'}>
             <Switch>
-                <Route exact path={`${process.env.PUBLIC_URL}/`} component={Demo}/>
+                {/*<Route exact path={`${process.env.PUBLIC_URL}/`} component={Demo}/>*/}
                 {/*<Route exact path={`/`} component={Home}/>*/}
 
                 <Route exact path={`${process.env.PUBLIC_URL}/defaultbadge`} component={Badge}/>
@@ -76,10 +77,11 @@ const App = () => {
                 <Route exact path={`${process.env.PUBLIC_URL}/payment`} component={Payment}/>
                 <Route exact path={`${process.env.PUBLIC_URL}/defaultnoti`} component={Notification}/>
                 <Route exact path={`${process.env.PUBLIC_URL}/helpbox`} component={Helpbox}/>
-                <Route exact path={`${process.env.PUBLIC_URL}/login`} component={Login}/>
+                <Route exact path={`${process.env.PUBLIC_URL}/`} component={Login}/>
                 <Route exact path={`${process.env.PUBLIC_URL}/register`} component={Register}/>
                 <Route exact path={`${process.env.PUBLIC_URL}/forgot`} component={Forgot}/>
                 <Route exact path={`${process.env.PUBLIC_URL}/notfound`} component={Notfound}/>
+                <Route exact path={`${process.env.PUBLIC_URL}/graphs`} component={Graphs}/>
 
                 <Route exact path={`${process.env.PUBLIC_URL}/shop1`} component={ShopOne}/>
                 <Route exact path={`${process.env.PUBLIC_URL}/shop2`} component={ShopTwo}/>
