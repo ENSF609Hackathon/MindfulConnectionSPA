@@ -36,6 +36,7 @@ import ShopThree from './pages/ShopThree';
 import Singleproduct from './pages/Singleproduct';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
+import ChatMenu from './pages/ChatMenu';
 import Chat from './pages/Chat';
 import Live from './pages/Live';
 import Job from './pages/Job';
@@ -94,7 +95,8 @@ class Root extends Component{
                     <Route exact path={`${process.env.PUBLIC_URL}/singleproduct`} component={Singleproduct}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/cart`} component={Cart}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/checkout`} component={Checkout}/>
-                    <Route exact path={`${process.env.PUBLIC_URL}/defaultmessage`} component={Chat}/>
+                    <Route exact path={`${process.env.PUBLIC_URL}/defaultmessage`} component={ChatMenu}/>
+                    <Route exact path={`${process.env.PUBLIC_URL}/defaultmessagechat`} component={Chat}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/defaultlive`} component={Live}/>       
                     
                     <Route exact path={`${process.env.PUBLIC_URL}/defaultjob`} component={Job}/>
