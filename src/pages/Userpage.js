@@ -26,7 +26,7 @@ class Userpage extends Component {
     }
 
     componentDidMount() {
-        getUserById(1)
+        getUserById(2)
         .then((response) => {
             this.setState({ user: response })
             console.dir(this.state.user)

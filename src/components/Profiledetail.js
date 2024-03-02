@@ -65,13 +65,13 @@ class Profiledetail extends Component {
                 <div className="card shadow-xss rounded-xxl border-0 mb-3">
                     <div className="card-body d-block p-4">
                         <h4 className="fw-700 mb-3 font-xsss text-grey-900">{user.name}'s Primary Contacts</h4>
-                        <p className="fw-500 text-grey-500 lh-24 font-xssss mb-0">{
+                        <div className="fw-500 text-grey-500 lh-24 font-xssss mb-0">{
                             this.state.contacts.map((contact, index) => (
-                                <div>
+                                <div key={index}>
                                     {this.displayContact(contact)}
                                 </div>
                             ))
-                        }</p>
+                        }</div>
                     </div>
                 </div>
                 <div className="card shadow-xss rounded-xxl border-0 mb-3">
