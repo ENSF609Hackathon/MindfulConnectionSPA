@@ -80,7 +80,6 @@ const App = () => {
                 <Route exact path={`${process.env.PUBLIC_URL}/knowledge`} component={HomepageResources}/>
 
                 <Route exact path={`${process.env.PUBLIC_URL}/diary`} component={Diary}/>
-                <Route exact path={`${process.env.PUBLIC_URL}/resources`} component={HomepageResources}/>
                 <Route exact path={`${process.env.PUBLIC_URL}/educational_resources`} component={EducationalResources}/>
 
                 <Route exact path={`${process.env.PUBLIC_URL}/defaultbadge`} component={Badge}/>
