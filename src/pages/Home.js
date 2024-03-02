@@ -21,7 +21,7 @@ import Storyslider from '../components/Storyslider';
 import Postview from '../components/Postview';
 import Load from '../components/Load';
 import Profilephoto from '../components/Profilephoto';
-import baseImage from "../assets/loginPeople.webp";
+import baseImage from "../assets/LoginPageImage.png";
 import logo from '../assets/Logo.jpg'
 
 const Home = () =>  {
