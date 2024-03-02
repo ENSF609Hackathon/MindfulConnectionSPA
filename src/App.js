@@ -18,7 +18,6 @@ import Notification from "./pages/Notification";
 import Helpbox from "./pages/Helpbox";
 
 import {ResidenceList} from "./pages/ResidenceList";
-import {HomepageResources} from "./pages/Resources";
 import { MemoryMood } from "./pages/MemoryMood";
 
 import Register from "./pages/Register";
@@ -45,8 +44,13 @@ import {useAuth0} from "@auth0/auth0-react";
 import Graphs from "./pages/Graphs";
 import Forum from "./pages/Forum";
 import Home from "./pages/Home";
+
+import Diary from "./pages/Diary";
+import HomepageResources from "./pages/Resources";
+
 import ProtectedRoute from "./auth/ProtectedRoute";
 import {UserRoles} from './auth/authTypes';
+import EducationalResources from "./pages/EducationalResources";
 
 
 const App = () => {
@@ -73,6 +77,9 @@ const App = () => {
                 <Route exact path={`/caring`} component={ResidenceList}/>
                 <Route exact path={'/memorymood'} component={MemoryMood}/>
                 <Route exact path={`${process.env.PUBLIC_URL}/knowledge`} component={HomepageResources}/>
+
+                <Route exact path={`${process.env.PUBLIC_URL}/diary`} component={Diary}/>
+                <Route exact path={`${process.env.PUBLIC_URL}/educational_resources`} component={EducationalResources}/>
 
                 <Route exact path={`${process.env.PUBLIC_URL}/defaultbadge`} component={Badge}/>
                 <Route exact path={`${process.env.PUBLIC_URL}/defaultgroup`} component={Group}/>
