@@ -54,6 +54,7 @@ import Analytics from './pages/Analytics';
 
 import { BrowserRouter, Switch, Route  } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
+import QuestionPrompList from './pages/QuestionPromptList';
 
 class Root extends Component{
   render(){
@@ -62,10 +63,10 @@ class Root extends Component{
               <Switch>
                     {/*<Route exact path={`${process.env.PUBLIC_URL}/`} component={Demo}/>*/}
                     <Route exact path={`/`} component={Home}/>
-
                     <Route exact path={`${process.env.PUBLIC_URL}/graphs`} component={Graphs}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/CMAI`} component={CMAI}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/burnout`} component={Burnout}/>
+                    <Route exact path={`${process.env.PUBLIC_URL}/qpl/`} component={QuestionPrompList}/>
 
                     <Route exact path={`${process.env.PUBLIC_URL}/defaultbadge`} component={Badge}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/defaultgroup`} component={Group}/>
@@ -108,7 +109,6 @@ class Root extends Component{
                     <Route exact path={`${process.env.PUBLIC_URL}/comingsoon`} component={Comingsoon}/>  
                     <Route exact path={`${process.env.PUBLIC_URL}/defaulthoteldetails`} component={Hotelsingle}/>
 
-                    
               </Switch>
           </BrowserRouter>
       )
