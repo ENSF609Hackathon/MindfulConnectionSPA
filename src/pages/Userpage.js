@@ -12,7 +12,7 @@ import Createpost from '../components/Createpost';
 import Events from '../components/Events';
 import Postview from '../components/Postview';
 import Load from '../components/Load';
-import { getUserById } from "../api/user";
+import { getUserById } from "../api/patient";
 
 class Userpage extends Component {
 

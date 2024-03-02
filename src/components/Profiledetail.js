@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import { getContactByUserId } from "../api/user";
+import { getContactByUserId } from "../api/patient";
 
 class Profiledetail extends Component {
 
