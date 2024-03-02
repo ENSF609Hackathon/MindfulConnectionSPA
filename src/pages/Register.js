@@ -8,7 +8,7 @@ class Register extends Component {
                 <div className="main-wrap">
                     <div className="nav-header bg-transparent shadow-none border-0">
                         <div className="nav-top w-100">
-                            <a href="/"><i className="feather-zap text-success display1-size me-2 ms-0"></i><span className="d-inline-block fredoka-font ls-3 fw-600 text-current font-xxl logo-text mb-0">Sociala. </span> </a>
+                            <a href="/"><i className="feather-zap text-success display1-size me-2 ms-0"></i><span className="d-inline-block fredoka-font ls-3 fw-600 text-current font-xxl logo-text mb-0">MC </span> </a>
                             <button className="nav-menu me-0 ms-auto"></button>
             
                             <a href="/login" className="header-btn d-none d-lg-block bg-dark fw-500 text-white font-xsss p-3 ms-auto w100 text-center lh-20 rounded-xl">Login</a>
@@ -33,6 +33,14 @@ class Register extends Component {
                                         <div className="form-group icon-input mb-3">
                                             <i className="font-sm ti-email text-grey-500 pe-0"></i>
                                             <input type="text" className="style2-input ps-5 form-control text-grey-900 font-xsss fw-600" placeholder="Your Email Address" />                        
+                                        </div>
+                                        <div className="form-group icon-input mb-3">
+                                            <i className="font-sm ti-email text-grey-500 pe-0"></i>
+                                            <input type="text" className="style2-input ps-5 form-control text-grey-900 font-xsss fw-600" placeholder="Your DOB (YYYY-MM-DD)" />                        
+                                        </div>
+                                        <div className="form-group icon-input mb-3">
+                                            <i className="font-sm ti-email text-grey-500 pe-0"></i>
+                                            <input type="text" className="style2-input ps-5 form-control text-grey-900 font-xsss fw-600" placeholder="Your Health Care Number" />                        
                                         </div>
                                         <div className="form-group icon-input mb-3">
                                             <input type="Password" className="style2-input ps-5 form-control text-grey-900 font-xss ls-3" placeholder="Password" />
