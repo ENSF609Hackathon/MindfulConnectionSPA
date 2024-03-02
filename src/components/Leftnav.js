@@ -28,6 +28,7 @@ const Leftnav = (props) => {
                         <div className="nav-caption fw-600 font-xssss text-grey-500"><span>New </span>Feeds</div>
                         <ul className="mb-1 top-content">
                             <li className="logo d-none d-xl-block d-lg-block"></li>
+                            <li><Link to="/home" className="nav-content-bttn open-font"><i className="feather-home btn-round-md bg-blue-gradiant me-3"></i><span>Home</span></Link></li>
                             <li><Link to="/home" className="nav-content-bttn open-font"><i className="feather-credit-card btn-round-md bg-blue-gradiant me-3"></i><span>Forum</span></Link></li>
                             <li><Link to="/defaultbadge" className="nav-content-bttn open-font"><i className="feather-user btn-round-md bg-red-gradiant me-3"></i><span>Patients</span></Link></li>
                             {/* <li><Link to="/defaultstorie" className="nav-content-bttn open-font"><i className="feather-globe btn-round-md bg-gold-gradiant me-3"></i><span>Explore Stories</span></Link></li>

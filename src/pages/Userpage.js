@@ -42,7 +42,6 @@ class Userpage extends Component {
             <Fragment> 
                 <Header />
                 <Leftnav />
-                <Rightchat />
                 <div className="main-content right-chat-active">
                     <div className="middle-sidebar-bottom">
                         <div className="middle-sidebar-left pe-0">
@@ -58,7 +57,7 @@ class Userpage extends Component {
                     </div>
                 </div>
 
-                <Popupchat />
+                {/* <Popupchat /> */}
                 <Appfooter /> 
 
             </Fragment>
