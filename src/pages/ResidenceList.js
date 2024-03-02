@@ -12,7 +12,7 @@ export const ResidenceList = () => {
             <Header />
             <Leftnav />
 
-            <div className="main-content bg-lightblue theme-dark-bg right-chat-active">
+            <div className="main-content theme-dark-bg right-chat-active">
                 <div className="middle-sidebar-bottom">
                     <div className="middle-sidebar-left">
                         <div className="middle-wrap">
