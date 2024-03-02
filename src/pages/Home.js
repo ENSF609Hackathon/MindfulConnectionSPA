@@ -34,34 +34,56 @@ const Home = () =>  {
 
     if(isAuthenticated){
         return (
-            <Fragment>
+            <Fragment> 
                 <Header />
                 <div className="main-content bg-lightred theme-dark-bg right-chat-active">
                     <div className="middle-sidebar-bottom">
                         <div className="middle-sidebar-left">
-                            <div className="col d-flex align-items-center">
-                                <div className="row text-align-center">
-                                    <Link to={`${process.env.PUBLIC_URL}/caring`}>
-                                        <div className="mx-auto feather-user-plus text-black bg p-3" style={{ fontSize: "800%"}}>
-                                            <img className="mx-5" src="assets/images/caringlogo.png" alt="Your Feather Book Image" style={{ width: '50%', position: 'relative' }} />
+                            <div className="row feed-body">
+                                <div style={{ marginTop: '200px' }}> {/* Adjusted margin-top */}
+                                    {/* Your content here */}
+                                    <div className="d-flex justify-content-center top"> 
+                                        <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '2px' }}>
+                                            <div className="feather-user-plus text-white bg p-3" style={{ fontSize: "240px", marginRight: "300px" }}></div>
+                                            <div className="feather-book text-white bg p-3" style={{ fontSize: "240px", marginLeft: "300px" }}></div>
                                         </div>
-                                    </Link>
+                                    </div>
                                 </div>
-                                <div className="row">
-                                    <Link to={`${process.env.PUBLIC_URL}/knowledge`}>
-                                        <div className="feather-book text-black bg p-3" style={{ fontSize: "800%"}}>
-                                            <img className="mx-5" src="assets/images/knowledgelogo.png" alt="Your Feather User Plus Image" style={{ width: '50%', position: 'relative' }} />
+                                <div style={{ marginTop: '0px' }}> {/* Adjusted margin-top */}
+                                    {/* Your content here */}
+                                    <div className="d-flex justify-content-center top"> 
+                                    <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '2px' }}>
+                                        <div style={{ marginRight: '300px' }}>
+                                            <Link to="/caring">
+                                                <img src="assets/images/caringlogo.png" alt="Your Feather Book Image" style={{ width: '300px', position: 'relative' }} />
+                                                <div className="position-absolute" style={{ top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
+                                                <div className="d-inline-block bg-orange rounded-circle position-relative" style={{ width: '50px', height: '50px', marginRight: "720px", marginBottom: "185px", border: '2px solid black'}}>
+                                                    <div className="position-absolute top-50 start-50 translate-middle" style={{ fontSize: '26px', color: 'black', fontWeight: 'bold'}}>
+                                                        3
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </Link>
                                         </div>
-                                    </Link>
+                                        <div style={{ marginLeft: '300px' }}>
+                                            <Link to="/knowledge">
+                                                <img src="assets/images/knowledgelogo.png" alt="Your Feather User Plus Image" style={{ width: '300px' }} />
+                                            </Link>
+                                        </div>
+                                    </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="text-center mt-5">
-                                <p className="font-xl">"A proper TLR technique today, Keeps the Doctor away... We will always have your back, so please save yours... 😊"</p>
+                                <div style={{ marginTop: '100px' }}>
+                                    <div className="text-center mt-5">
+                                        <p className="font-xl">"A proper TLR technique today, Keeps the Doctor away... We will always have your back, so please save yours... 😊"</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <Appfooter />
+                <Popupchat />
+                <Appfooter /> 
             </Fragment>
         );
     } else {

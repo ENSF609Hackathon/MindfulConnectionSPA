@@ -133,7 +133,7 @@
   fill: #fff;
 }
 .theme-dark .app-header .menu-icon i {
-  color: #fff;
+  color: #ffffff;
 }
 .theme-dark h1, .theme-dark h2, .theme-dark h3, .theme-dark h4, .theme-dark h5, .theme-dark h6, .theme-dark .h1, .theme-dark .h2, .theme-dark .h3, .theme-dark .h4, .theme-dark .h5, .theme-dark .h6 {
   color: #fff !important;
@@ -187,6 +187,10 @@
   background-color: #000;
 }
 
+.bg-blue{
+  background-color: #2b7eb6;
+}
+
 .text-facebook {
   color: #0d66ff !important;
 }
@@ -223,7 +227,7 @@
   color: red !important;
 }
 
-.text-ornage {
+.text-orange {
   color: #ff9500 !important;
 }
 
@@ -271,20 +275,40 @@
   background: linear-gradient(to right, #0575e6, #021b79) !important;
 }
 
+.bg-green-gradiant {
+  background: linear-gradient(to right, #00FF00, #008000) !important; /* Green gradient */
+}
+
 .bg-grey {
   background-color: #eee !important;
 }
 
 .bg-lightblue {
-  background-color: #e8f1fa !important;
+  background-color: #19c0d6 !important;
+}
+
+.bg-lightblue3 {
+  background-color: #3f9ce8 !important;
 }
 
 .bg-lightblue2 {
   background-color: #f7f9fd !important;
 }
 
+.bg-darkgreen {
+  background-color: #119525 !important;
+}
+
 .bg-lightgreen {
-  background-color: #f2faf6 !important;
+  background-color: #69d654 !important;
+}
+
+.bg-lightred {
+  background-color: #d74949 !important;
+}
+
+.bg-beige {
+  background-color: #bcae48 !important;
 }
 
 .bg-greyblue {
@@ -304,7 +328,7 @@
 }
 
 .bg-orange {
-  background-color: #ff9500 !important;
+  background-color: #f8b14e !important;
 }
 
 .bg-cyan {
@@ -8880,7 +8904,7 @@ textarea.form-control-lg {
 }
 
 .bg-dark {
-  background-color: #343a40 !important;
+  background-color: #007bff !important;
 }
 
 .bg-body {
@@ -12340,7 +12364,7 @@ strong,
 .shop-slider .slick-dots .slick-active button {border:2px #333 solid; border-radius:20px;}
 .video-react .video-react-poster {background-size: cover !important;}
 .video-react .video-react-big-play-button {width:80px !important; height:80px !important; border-radius: 80px !important; margin-left: -40px !important; margin-top: -40px !important; top:50% !important; left: 50% !important; border:0 !important; line-height: 80px !important;}
-.center-menu-icon.active i {color: #1E74FD !important;background-color: #d2e3ff !important;  border-color: #bcd5fe !important;}
+.center-menu-icon.active i {color: grey !important;background-color: #d2e3ff !important;  border-color: #bcd5fe !important;}
 
 .main-wrap, .main-wrapper {
   opacity: 1;
@@ -12482,6 +12506,10 @@ strong,
 
 .fredoka-font {
   font-family: "Fredoka One", cursive;
+}
+
+.underline-link {
+  text-decoration: underline;
 }
 
 .right-chat {

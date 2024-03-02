@@ -52,6 +52,11 @@ import ProtectedRoute from "./auth/ProtectedRoute";
 import {UserRoles} from './auth/authTypes';
 import EducationalResources from "./pages/EducationalResources";
 
+import Emergencycontact from './pages/Emergencycontact';
+import Nearbyservices from './pages/Nearbyservices';
+import Chattwo from './pages/Chattwo';
+import Knowledge from './pages/Knowledge';
+import Caring from './pages/Caring';
 
 const App = () => {
 
@@ -73,10 +78,11 @@ const App = () => {
                 {/*<Route exact path={`${process.env.PUBLIC_URL}/`} component={Demo}/>*/}
                 <Route exact path={`/`} component={Home}/>
                 <Route exact path={`/forum`} component={Forum}/>
+                <Route exact path={`/home`} component={Home}/>
 
-                <Route exact path={`/caring`} component={ResidenceList}/>
+                
                 <Route exact path={'/memorymood'} component={MemoryMood}/>
-                <Route exact path={`${process.env.PUBLIC_URL}/knowledge`} component={HomepageResources}/>
+                
 
                 <Route exact path={`${process.env.PUBLIC_URL}/diary`} component={Diary}/>
                 <Route exact path={`${process.env.PUBLIC_URL}/educational_resources`} component={EducationalResources}/>
@@ -121,6 +127,13 @@ const App = () => {
                 <Route exact path={`${process.env.PUBLIC_URL}/authorpage`} component={Authorpage}/>
                 <Route exact path={`${process.env.PUBLIC_URL}/comingsoon`} component={Comingsoon}/>
                 <Route exact path={`${process.env.PUBLIC_URL}/defaulthoteldetails`} component={Hotelsingle}/>
+
+                <Route exact path={`${process.env.PUBLIC_URL}/emergencycontact`} component={Emergencycontact}/>
+                <Route exact path={`${process.env.PUBLIC_URL}/nearbyservices`} component={Nearbyservices}/>
+                <Route exact path={`${process.env.PUBLIC_URL}/knowledge`} component={Knowledge}/>
+                <Route exact path={`${process.env.PUBLIC_URL}/caring`} component={Caring}/>
+                <Route exact path={`${process.env.PUBLIC_URL}/professionalmessage`} component={Chattwo}/>
+
             </Switch>
         </BrowserRouter>
     )
