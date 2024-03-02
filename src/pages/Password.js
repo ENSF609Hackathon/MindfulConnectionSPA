@@ -14,17 +14,13 @@ class Password extends Component {
             <div className="main-wrapper">
 
                 <Header />
-                <Leftnav />
-                <Rightchat />
-
-
-                <div className="main-content bg-lightblue theme-dark-bg right-chat-active">
+                <div className="main-content bg-lightgreen theme-dark-bg right-chat-active">
             
                     <div className="middle-sidebar-bottom">
                         <div className="middle-sidebar-left">
                             <div className="middle-wrap">
                                 <div className="card w-100 border-0 bg-white shadow-xs p-0 mb-4">
-                                    <div className="card-body p-4 w-100 bg-current border-0 d-flex rounded-3">
+                                    <div className="card-body p-4 w-100 bg-darkgreen border-0 d-flex rounded-3">
                                     <Link to="/defaultsettings" className="d-inline-block mt-2"><i className="ti-arrow-left font-sm text-white"></i></Link>
                                         <h4 className="font-xs text-white fw-600 ms-4 mb-0 mt-2">Change Password</h4>
                                     </div>
@@ -56,7 +52,7 @@ class Password extends Component {
                                             </div>
                                             <div className="row">
                                                 <div className="col-lg-12 mb-0">
-                                                    <a href="/password" className="bg-current text-center text-white font-xsss fw-600 p-3 w175 rounded-3 d-inline-block">Save</a>
+                                                    <a href="/password" className="bg-darkgreen text-center text-white font-xsss fw-600 p-3 w175 rounded-3 d-inline-block">Save</a>
                                                 </div>
                                             </div>
 

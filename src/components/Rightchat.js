@@ -2,46 +2,46 @@ import React,{Component} from 'react';
 
 const chatMember = [
     {
-        imageUrl: 'user.png',
-        name: 'Hurin Seary',
+        imageUrl: 'user1.png',
+        name: 'John Smith',
         status: 'bg-success'
     },
     {
-        imageUrl: 'user.png',
-        name: 'Victor Exrixon',
+        imageUrl: 'user2.png',
+        name: 'Emily Johnson',
         status: 'bg-success'
     },
     {
-        imageUrl: 'user.png',
-        name: 'Surfiya Zakir',
+        imageUrl: 'user3.png',
+        name: 'Michael Brown',
         status: 'bg-warning'
     },
     {
-        imageUrl: 'user.png',
-        name: 'Goria Coast',
+        imageUrl: 'user4.png',
+        name: 'Dr. Jessica Lee',
         status: 'bg-danger'
     },
     {
-        imageUrl: 'user.png',
-        name: 'Hurin Seary',
+        imageUrl: 'user5.png',
+        name: 'Sophia Wilson',
         status: 'bg-success'
     },
     {
-        imageUrl: 'user.png',
-        name: 'David Goria',
+        imageUrl: 'chad.png',
+        name: 'Dr. Chad Giga',
         status: 'bg-success'
     },
     {
-        imageUrl: 'user.png',
-        name: 'Seary Victor',
+        imageUrl: 'user7.png',
+        name: 'Dr. James Taylor',
         status: 'bg-success'
     },
     {
-        imageUrl: 'user.png',
-        name: 'Ana Seary',
+        imageUrl: 'user8.png',
+        name: 'Olivia Martinez',
         status: 'bg-success'
     },
-]
+];
 
 class Rightchat extends Component {
     state = {
@@ -120,25 +120,25 @@ class Rightchat extends Component {
                         <ul className="list-group list-group-flush">
                             <li className="bg-transparent list-group-item no-icon pe-0 ps-0 pt-2 pb-2 border-0 d-flex align-items-center">
                                 
-                                <span className="btn-round-sm bg-primary-gradiant me-3 ls-3 text-white font-xssss fw-700">UD</span>
+                                <span className="btn-round-sm bg-primary-gradiant me-3 ls-3 text-white font-xssss fw-700">AHS</span>
                                 <h3 className="fw-700 mb-0 mt-0">
-                                    <span className="font-xssss text-grey-600 d-block text-dark model-popup-chat pointer" onClick={this.toggleOpen}>Studio Express</span>
+                                    <span className="font-xssss text-grey-600 d-block text-dark model-popup-chat pointer" onClick={this.toggleOpen}>AHS</span>
                                 </h3>
                                 <span className="badge mt-0 text-grey-500 badge-pill pe-0 font-xsssss">2 min</span>
                             </li>
                             <li className="bg-transparent list-group-item no-icon pe-0 ps-0 pt-2 pb-2 border-0 d-flex align-items-center">
                                 
-                                <span className="btn-round-sm bg-gold-gradiant me-3 ls-3 text-white font-xssss fw-700">AR</span>
+                                <span className="btn-round-sm bg-gold-gradiant me-3 ls-3 text-white font-xssss fw-700">NC</span>
                                 <h3 className="fw-700 mb-0 mt-0">
-                                    <span className="font-xssss text-grey-600 d-block text-dark model-popup-chat pointer" onClick={this.toggleOpen}>Armany Design</span>
+                                    <span className="font-xssss text-grey-600 d-block text-dark model-popup-chat pointer" onClick={this.toggleOpen}>Nursing Cohort</span>
                                 </h3>
                                 <span className="bg-warning ms-auto btn-round-xss"></span>
                             </li>
                             <li className="bg-transparent list-group-item no-icon pe-0 ps-0 pt-2 pb-2 border-0 d-flex align-items-center">
                                 
-                                <span className="btn-round-sm bg-mini-gradiant me-3 ls-3 text-white font-xssss fw-700">UD</span>
+                                <span className="btn-round-sm bg-mini-gradiant me-3 ls-3 text-white font-xssss fw-700">PCI</span>
                                 <h3 className="fw-700 mb-0 mt-0">
-                                    <span className="font-xssss text-grey-600 d-block text-dark model-popup-chat pointer" onClick={this.toggleOpen}>De fabous</span>
+                                    <span className="font-xssss text-grey-600 d-block text-dark model-popup-chat pointer" onClick={this.toggleOpen}>Patient Care Inc.</span>
                                 </h3>
                                 <span className="bg-success ms-auto btn-round-xss"></span>
                             </li>
@@ -150,17 +150,17 @@ class Rightchat extends Component {
                         <ul className="list-group list-group-flush">
                             <li className="bg-transparent list-group-item no-icon pe-0 ps-0 pt-2 pb-2 border-0 d-flex align-items-center">
                                 
-                                <span className="btn-round-sm bg-primary-gradiant me-3 ls-3 text-white font-xssss fw-700">AB</span>
+                                <span className="btn-round-sm bg-primary-gradiant me-3 ls-3 text-white font-xssss fw-700">AI</span>
                                 <h3 className="fw-700 mb-0 mt-0">
-                                    <span className="font-xssss text-grey-600 d-block text-dark model-popup-chat pointer" onClick={this.toggleOpen}>Armany Seary</span>
+                                    <span className="font-xssss text-grey-600 d-block text-dark model-popup-chat pointer" onClick={this.toggleOpen}>Alzheimer Info</span>
                                 </h3>
                                 <span className="bg-success ms-auto btn-round-xss"></span>
                             </li>
                             <li className="bg-transparent list-group-item no-icon pe-0 ps-0 pt-2 pb-2 border-0 d-flex align-items-center">
                                 
-                                <span className="btn-round-sm bg-gold-gradiant me-3 ls-3 text-white font-xssss fw-700">SD</span>
+                                <span className="btn-round-sm bg-gold-gradiant me-3 ls-3 text-white font-xssss fw-700">DS</span>
                                 <h3 className="fw-700 mb-0 mt-0">
-                                    <span className="font-xssss text-grey-600 d-block text-dark model-popup-chat pointer" onClick={this.toggleOpen}>Entropio Inc</span>
+                                    <span className="font-xssss text-grey-600 d-block text-dark model-popup-chat pointer" onClick={this.toggleOpen}>Dementia Symptoms</span>
                                 </h3>
                                 <span className="bg-success ms-auto btn-round-xss"></span>
                             </li>

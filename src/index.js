@@ -49,6 +49,11 @@ import Authorpage from './pages/Authorpage';
 import Hotelsingle from './pages/Hotelsingle';
 import Analytics from './pages/Analytics';
 
+import Emergencycontact from './pages/Emergencycontact';
+import Nearbyservices from './pages/Nearbyservices';
+import Chattwo from './pages/Chattwo';
+import Knowledge from './pages/Knowledge';
+import Caring from './pages/Caring';
 
 import { BrowserRouter, Switch, Route  } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
@@ -60,7 +65,7 @@ class Root extends Component{
               <Switch>
                     {/*<Route exact path={`${process.env.PUBLIC_URL}/`} component={Demo}/>*/}
                     <Route exact path={`/`} component={Home}/>
-
+                    <Route exact path={`/home`} component={Home}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/defaultbadge`} component={Badge}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/defaultgroup`} component={Group}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/defaultstorie`} component={Storie}/>
@@ -91,6 +96,7 @@ class Root extends Component{
                     <Route exact path={`${process.env.PUBLIC_URL}/cart`} component={Cart}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/checkout`} component={Checkout}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/defaultmessage`} component={Chat}/>
+                    <Route exact path={`${process.env.PUBLIC_URL}/professionalmessage`} component={Chattwo}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/defaultlive`} component={Live}/>       
                     
                     <Route exact path={`${process.env.PUBLIC_URL}/defaultjob`} component={Job}/>
@@ -102,7 +108,11 @@ class Root extends Component{
                     <Route exact path={`${process.env.PUBLIC_URL}/comingsoon`} component={Comingsoon}/>  
                     <Route exact path={`${process.env.PUBLIC_URL}/defaulthoteldetails`} component={Hotelsingle}/>
 
-                    
+                    <Route exact path={`${process.env.PUBLIC_URL}/emergencycontact`} component={Emergencycontact}/>
+                    <Route exact path={`${process.env.PUBLIC_URL}/nearbyservices`} component={Nearbyservices}/>
+                    <Route exact path={`${process.env.PUBLIC_URL}/knowledge`} component={Knowledge}/>
+                    <Route exact path={`${process.env.PUBLIC_URL}/caring`} component={Caring}/>
+
               </Switch>
           </BrowserRouter>
       )

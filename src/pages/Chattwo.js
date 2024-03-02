@@ -5,9 +5,7 @@ import Rightchat from '../components/Rightchat';
 import Appfooter from '../components/Appfooter';
 import Popupchat from '../components/Popupchat';
 
-//code here to import user info from the instance and add the name 
-
-class Chat extends Component {
+class Chattwo extends Component {
     render() {
         return (
             <Fragment> 
@@ -26,14 +24,14 @@ class Chat extends Component {
                                                 <div className="message-item">
                                                     <div className="message-user">
                                                         <figure className="avatar">
-                                                            <img src="assets/images/frontdesk.png" alt="avater" />
+                                                            <img src="assets/images/chad.png" alt="avater" />
                                                         </figure>
                                                         <div>
-                                                            <h5>Front Desk</h5>
-                                                            <div className="time">10:00 AM</div>
+                                                            <h5>Dr. Chad Giga</h5>
+                                                            <div className="time">09:00 AM</div>
                                                         </div>
                                                     </div>
-                                                    <div className="message-wrap">Hello! How may I assist you today?</div>
+                                                    <div className="message-wrap">Good morning, Eric. Was there anything you needed assistance with?</div>
                                                 </div>
 
                                                 <div className="message-item outgoing-message">
@@ -43,23 +41,23 @@ class Chat extends Component {
                                                         </figure>
                                                         <div>
                                                             <h5>Eric Lee</h5>
-                                                            <div className="time">10:02 AM<i className="ti-double-check text-info"></i></div>
+                                                            <div className="time">09:02 AM<i className="ti-double-check text-info"></i></div>
                                                         </div>
                                                     </div>
-                                                    <div className="message-wrap">Hi, I'm trying to access medical information of my patients. How can I do that?</div>
+                                                    <div className="message-wrap">Hi Dr. Giga, I need some information about a patient's disease. Can you help me?</div>
                                                 </div>
 
                                                 <div className="message-item">
                                                     <div className="message-user">
                                                         <figure className="avatar">
-                                                            <img src="assets/images/frontdesk.png" alt="avater" />
+                                                            <img src="assets/images/chad.png" alt="avater" />
                                                         </figure>
                                                         <div>
-                                                            <h5>Front Desk</h5>
-                                                            <div className="time">10:10 AM</div>
+                                                            <h5>Dr. Chad Giga</h5>
+                                                            <div className="time">09:05 AM</div>
                                                         </div>
                                                     </div>
-                                                    <div className="message-wrap">Sure! After logging in, you can navigate to the "Let's start caring!" section in the home tab. Press on the relevant patient, then the "Medications" tab.</div>
+                                                    <div className="message-wrap">Of course, Eric. What specific disease are you inquiring about?</div>
                                                 </div>
 
                                                 <div className="message-item outgoing-message">
@@ -69,23 +67,23 @@ class Chat extends Component {
                                                         </figure>
                                                         <div>
                                                             <h5>Eric Lee</h5>
-                                                            <div className="time">10:12 AM<i className="ti-double-check text-info"></i></div>
+                                                            <div className="time">09:08 AM<i className="ti-double-check text-info"></i></div>
                                                         </div>
                                                     </div>
-                                                    <div className="message-wrap">Got it! Thank you. Also, where can I change my password?</div>
+                                                    <div className="message-wrap">I need information about Alzheimer's disease for one of our patients. Can you provide details?</div>
                                                 </div>
 
                                                 <div className="message-item">
                                                     <div className="message-user">
                                                         <figure className="avatar">
-                                                            <img src="assets/images/frontdesk.png" alt="avater" />
+                                                            <img src="assets/images/chad.png" alt="avater" />
                                                         </figure>
                                                         <div>
-                                                            <h5>Front Desk</h5>
-                                                            <div className="time">10:15 AM</div>
+                                                            <h5>Dr. Chad Giga</h5>
+                                                            <div className="time">09:10 AM</div>
                                                         </div>
                                                     </div>
-                                                    <div className="message-wrap">You can change your password by clicking on the fourth icon on the menu which looks like a person. There should be an option to change your password there. </div>
+                                                    <div className="message-wrap">Sure, Eric. Let me gather the necessary information for you.</div>
                                                 </div>
 
                                                 <div className="message-item outgoing-message">
@@ -95,28 +93,13 @@ class Chat extends Component {
                                                         </figure>
                                                         <div>
                                                             <h5>Eric Lee</h5>
-                                                            <div className="time">10:17 AM<i className="ti-double-check text-info"></i></div>
+                                                            <div className="time">09:15 AM<i className="ti-double-check text-info"></i></div>
                                                         </div>
                                                     </div>
-                                                    <div className="message-wrap">Thank you for your help!</div>
-                                                </div>
-
-                                                <div className="message-item">
-                                                    <div className="message-user">
-                                                        <figure className="avatar">
-                                                            <img src="assets/images/frontdesk.png" alt="avater" />
-                                                        </figure>
-                                                        <div>
-                                                            <h5>Front Desk</h5>
-                                                            <div className="time">10:21 AM</div>
-                                                        </div>
-                                                    </div>
-                                                    <div className="message-wrap">No problem. Have a great day!</div>
+                                                    <div className="message-wrap">Thank you, Dr. Giga. I'll wait for your response.</div>
                                                 </div>
 
                                                 <div className="clearfix"></div>
-
-
                                             </div>
                                         </div>
                                     </div>
@@ -135,10 +118,9 @@ class Chat extends Component {
 
                 <Popupchat />
                 <Appfooter /> 
-
             </Fragment>
         );
     }
 }
 
-export default Chat;
+export default Chattwo;

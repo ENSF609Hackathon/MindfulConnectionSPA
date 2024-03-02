@@ -9,20 +9,26 @@ class Login extends Component {
                 <div className="main-wrap">
                     <div className="nav-header bg-transparent shadow-none border-0">
                         <div className="nav-top w-100">
-                            <a href="/"><i className="feather-zap text-success display1-size me-2 ms-0"></i><span className="d-inline-block fredoka-font ls-3 fw-600 text-current font-xxl logo-text mb-0">Sociala. </span> </a>
-                            <button className="nav-menu me-0 ms-auto"></button>
-            
-                            <a href="/login" className="header-btn d-none d-lg-block bg-dark fw-500 text-white font-xsss p-3 ms-auto w100 text-center lh-20 rounded-xl">Login</a>
+                        <a href="/">
+                            <img src={`${process.env.PUBLIC_URL}/assets/images/logopicblue.png`} alt="Logo" className="feather-zap text-success display1-size me-2 ms-0" style={{ width: '75px', height: '70px' }} />
+                            <span className="d-inline-block fredoka-font ls-3 fw-600 text-black font-xxl logo-text mb-0">Mindful Care Connections </span>
+                        </a>
+                        <button className="nav-menu me-0 ms-auto"></button>
+                            <a href="/login" className="header-btn d-none d-lg-block bg-blue fw-500 text-white font-xsss p-3 ms-auto w100 text-center lh-20 rounded-xl">Login</a>
                             <a href="/register" className="header-btn d-none d-lg-block bg-current fw-500 text-white font-xsss p-3 ms-2 w100 text-center lh-20 rounded-xl">Register</a>
                         </div>
                     </div>
                     <div className="row">
                         <div className="col-xl-5 d-none d-xl-block p-0 vh-100 bg-image-cover bg-no-repeat"
-                        style={{backgroundImage: `url("https://via.placeholder.com/800x950.png")`}}></div>
+                        style={{
+                            backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/logo.png)`,
+                            backgroundPosition: 'left center' // Adjust the value as needed
+                        }}
+                    ></div>
                             <div className="col-xl-7 vh-100 align-items-center d-flex bg-white rounded-3 overflow-hidden">
                                 <div className="card shadow-none border-0 ms-auto me-auto login-card">
                                     <div className="card-body rounded-0 text-left">
-                                        <h2 className="fw-700 display1-size display2-md-size mb-3">Login into <br />your account</h2>
+                                        <h2 className="fw-700 display1-size display2-md-size mb-3">Caring <br />starts here!</h2>
                                         <form>
                                             
                                             <div className="form-group icon-input mb-3">
@@ -35,14 +41,16 @@ class Login extends Component {
                                             </div>
                                             <div className="form-check text-left mb-3">
                                                 <input type="checkbox" className="form-check-input mt-2" id="exampleCheck5" />
-                                                <label className="form-check-label font-xsss text-grey-500">Remember me</label>
+                                                <label className="form-check-label font-xsss text-grey-500" style={{ marginTop: '5px' }}>
+                                                    Remember me
+                                                </label>
                                                 <a href="/forgot" className="fw-600 font-xsss text-grey-700 mt-1 float-right">Forgot your Password?</a>
                                             </div>
                                         </form>
                                         
                                         <div className="col-sm-12 p-0 text-left">
                                             <div className="form-group mb-1"><a href="/login" className="form-control text-center style2-input text-white fw-600 bg-dark border-0 p-0 ">Login</a></div>
-                                            <h6 className="text-grey-500 font-xsss fw-500 mt-0 mb-0 lh-32">Dont have account <a href="/register" className="fw-700 ms-1">Register</a></h6>
+                                            <h6 className="text-grey-500 font-xsss fw-500 mt-0 mb-0 lh-32">Dont have account? <a href="/register" className="fw-700 ms-1">Register</a></h6>
                                         </div>
                                         <div className="col-sm-12 p-0 text-center mt-2">
                                             

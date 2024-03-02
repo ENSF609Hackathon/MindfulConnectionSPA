@@ -15,7 +15,7 @@ const notiList = [
         des: 'UI/UX Community : Mobile Apps UI Designer is required for Tech… ',
         attach: 'attach',
         time: '12 minute ago',
-        read: 'bg-lightblue theme-light-bg'
+        read:  ''
     },
     {
         imageUrl: 'user.png',
@@ -76,7 +76,7 @@ const notiList = [
         des: 'UI/UX Community : Mobile Apps UI Designer is required for Tech… ',
         attach: 'attach',
         time: '12 minute ago',
-        read: 'bg-lightblue theme-light-bg'
+        read:  ''
     },
     {
         imageUrl: 'user.png',
@@ -126,7 +126,7 @@ const notiList = [
         des: 'UI/UX Community : Mobile Apps UI Designer is required for Tech… ',
         attach: 'attach',
         time: '12 hour ago',
-        read: 'bg-lightblue theme-light-bg'
+        read: ''
     },
 ]
 
@@ -137,10 +137,8 @@ class Notification extends Component {
 
             <Fragment> 
                 <Header />
-                <Leftnav />
-                <Rightchat />
 
-                    <div className="main-content theme-dark-bg right-chat-active">
+                    <div className="main-content bg-orange theme-dark-bg right-chat-active">
                     
                         <div className="middle-sidebar-bottom">
                             <div className="middle-sidebar-left">
