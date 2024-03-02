@@ -18,13 +18,23 @@ import Storyslider from '../components/Storyslider';
 import Postview from '../components/Postview';
 import Load from '../components/Load';
 import Profilephoto from '../components/Profilephoto';
+import { useAuth0 } from '@auth0/auth0-react';
+import baseImage from "../assets/loginPeople.webp";
 
 
 
-class Home extends Component {
-    render() {
+
+const Home = () =>  {
+
+    const { isAuthenticated, isLoading, user, loginWithRedirect } = useAuth0();
+
+    if(isLoading){
+        return<div>Loading..</div>
+    }
+
+    if(isAuthenticated){
         return (
-            <Fragment> 
+            <Fragment>
                 <Header />
                 <Leftnav />
                 <Rightchat />
@@ -57,10 +67,46 @@ class Home extends Component {
                     </div>
                 </div>
                 <Popupchat />
-                <Appfooter /> 
+                <Appfooter />
             </Fragment>
         );
+    } else {
+        return(
+            <Fragment>
+                <div className="main-wrap">
+                    <div className="nav-header bg-transparent shadow-none border-0">
+                        <div className="nav-top w-100">
+                            <a href="/"><i className="feather-heart text-success display1-size me-2 ms-0"></i><span className="d-inline-block fredoka-font ls-3 fw-600 text-current font-xxl logo-text mb-0">Mindful Connection</span> </a>
+                            <button className="nav-menu me-0 ms-auto"></button>
+
+                            {/*<a onClick={handlesLogout} className="header-btn d-none d-lg-block bg-dark fw-500 text-white font-xsss p-3 ms-auto w100 text-center lh-20 rounded-xl">Login</a>*/}
+                            {/*<a href="/register" className="header-btn d-none d-lg-block bg-current fw-500 text-white font-xsss p-3 ms-2 w100 text-center lh-20 rounded-xl">Register</a>*/}
+                        </div>
+                    </div>
+                    <div className="row">
+                        <img className="col-xl-5 d-none d-xl-block p-0 vh-90 bg-image-cover bg-no-repeat" alt='happy people' src={baseImage}></img>
+                        <div className="col-xl-7 vh-100 align-items-center d-flex bg-white rounded-3 overflow-hidden">
+                            <div className="card shadow-none border-0 ms-auto me-auto login-card">
+                                <div className="card-body rounded-0 text-left">
+                                    <h2 className="fw-700 display1-size display2-md-size mb-3">Login into <br />your account</h2>
+                                    <div>
+                                        <a onClick={loginWithRedirect} className="bg-dark fw-500 text-white font-xsss p-3 ms-auto w100 text-center lh-20 rounded-xl">Login</a>
+                                        <a onClick={loginWithRedirect} className="bg-current fw-500 text-white font-xsss p-3 ms-2 w100 text-center lh-20 rounded-xl">Register</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </Fragment>
+        )
     }
+
+
+
+
+
 }
 
 export default Home;
