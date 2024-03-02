@@ -11,7 +11,7 @@ class Register extends Component {
                             <a href="/"><i className="feather-zap text-success display1-size me-2 ms-0"></i><span className="d-inline-block fredoka-font ls-3 fw-600 text-current font-xxl logo-text mb-0">MC </span> </a>
                             <button className="nav-menu me-0 ms-auto"></button>
             
-                            <a href="/src/pages/Login" className="header-btn d-none d-lg-block bg-dark fw-500 text-white font-xsss p-3 ms-auto w100 text-center lh-20 rounded-xl">Login</a>
+                            <a href="/src/pages/Splash" className="header-btn d-none d-lg-block bg-dark fw-500 text-white font-xsss p-3 ms-auto w100 text-center lh-20 rounded-xl">Splash</a>
                             <a href="/register" className="header-btn d-none d-lg-block bg-current fw-500 text-white font-xsss p-3 ms-2 w100 text-center lh-20 rounded-xl">Register</a>
                         </div>
                     </div>
@@ -59,7 +59,7 @@ class Register extends Component {
                                     
                                     <div className="col-sm-12 p-0 text-left">
                                         <div className="form-group mb-1"><a href="/register" className="form-control text-center style2-input text-white fw-600 bg-dark border-0 p-0 ">Register</a></div>
-                                        <h6 className="text-grey-500 font-xsss fw-500 mt-0 mb-0 lh-32">Already have account <a href="/src/pages/Login" className="fw-700 ms-1">Login</a></h6>
+                                        <h6 className="text-grey-500 font-xsss fw-500 mt-0 mb-0 lh-32">Already have account <a href="/src/pages/Splash" className="fw-700 ms-1">Splash</a></h6>
                                     </div>
                                     
                                 </div>

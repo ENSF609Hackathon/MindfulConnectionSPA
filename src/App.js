@@ -16,7 +16,7 @@ import Password from "./pages/Password";
 import Payment from "./pages/Payment";
 import Notification from "./pages/Notification";
 import Helpbox from "./pages/Helpbox";
-import Login from "./pages/Login";
+
 import Register from "./pages/Register";
 import Forgot from "./pages/Forgot";
 import Notfound from "./pages/Notfound";
@@ -39,6 +39,9 @@ import Hotelsingle from "./pages/Hotelsingle";
 import React from "react";
 import {useAuth0} from "@auth0/auth0-react";
 import Graphs from "./pages/Graphs";
+import Home from "./pages/Home";
+import ProtectedRoute from "./auth/ProtectedRoute";
+import {UserRoles} from './auth/authTypes';
 
 
 const App = () => {
@@ -59,7 +62,7 @@ const App = () => {
         <BrowserRouter basename={'/'}>
             <Switch>
                 {/*<Route exact path={`${process.env.PUBLIC_URL}/`} component={Demo}/>*/}
-                {/*<Route exact path={`/`} component={Home}/>*/}
+                <Route exact path={`/`} component={Home}/>
 
                 <Route exact path={`${process.env.PUBLIC_URL}/defaultbadge`} component={Badge}/>
                 <Route exact path={`${process.env.PUBLIC_URL}/defaultgroup`} component={Group}/>
@@ -77,11 +80,11 @@ const App = () => {
                 <Route exact path={`${process.env.PUBLIC_URL}/payment`} component={Payment}/>
                 <Route exact path={`${process.env.PUBLIC_URL}/defaultnoti`} component={Notification}/>
                 <Route exact path={`${process.env.PUBLIC_URL}/helpbox`} component={Helpbox}/>
-                <Route exact path={`${process.env.PUBLIC_URL}/`} component={Login}/>
+
                 <Route exact path={`${process.env.PUBLIC_URL}/register`} component={Register}/>
                 <Route exact path={`${process.env.PUBLIC_URL}/forgot`} component={Forgot}/>
                 <Route exact path={`${process.env.PUBLIC_URL}/notfound`} component={Notfound}/>
-                <Route exact path={`${process.env.PUBLIC_URL}/graphs`} component={Graphs}/>
+                <ProtectedRoute exact path={`${process.env.PUBLIC_URL}/graphs`} component={Graphs} requiredRoles={UserRoles.PatientOrBetter}/>
 
                 <Route exact path={`${process.env.PUBLIC_URL}/shop1`} component={ShopOne}/>
                 <Route exact path={`${process.env.PUBLIC_URL}/shop2`} component={ShopTwo}/>
