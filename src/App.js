@@ -17,6 +17,10 @@ import Payment from "./pages/Payment";
 import Notification from "./pages/Notification";
 import Helpbox from "./pages/Helpbox";
 
+import {ResidenceList} from "./pages/ResidenceList";
+import {HomepageResources} from "./pages/Resources";
+import { MemoryMood } from "./pages/MemoryMood";
+
 import Register from "./pages/Register";
 import Forgot from "./pages/Forgot";
 import Notfound from "./pages/Notfound";
@@ -39,6 +43,7 @@ import Hotelsingle from "./pages/Hotelsingle";
 import React from "react";
 import {useAuth0} from "@auth0/auth0-react";
 import Graphs from "./pages/Graphs";
+import Forum from "./pages/Forum";
 import Home from "./pages/Home";
 import ProtectedRoute from "./auth/ProtectedRoute";
 import {UserRoles} from './auth/authTypes';
@@ -63,6 +68,11 @@ const App = () => {
             <Switch>
                 {/*<Route exact path={`${process.env.PUBLIC_URL}/`} component={Demo}/>*/}
                 <Route exact path={`/`} component={Home}/>
+                <Route exact path={`/forum`} component={Forum}/>
+
+                <Route exact path={`/caring`} component={ResidenceList}/>
+                <Route exact path={'/memorymood'} component={MemoryMood}/>
+                <Route exact path={`${process.env.PUBLIC_URL}/knowledge`} component={HomepageResources}/>
 
                 <Route exact path={`${process.env.PUBLIC_URL}/defaultbadge`} component={Badge}/>
                 <Route exact path={`${process.env.PUBLIC_URL}/defaultgroup`} component={Group}/>
