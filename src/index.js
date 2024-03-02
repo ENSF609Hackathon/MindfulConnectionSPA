@@ -9,6 +9,8 @@ import Demo from './demo/Demo';
 
 import Home from './pages/Home';
 
+import Graphs from './pages/Graphs';
+
 import Badge from './pages/Badge';
 import Group from './pages/Group';
 import Storie from './pages/Storie';
@@ -60,6 +62,8 @@ class Root extends Component{
               <Switch>
                     {/*<Route exact path={`${process.env.PUBLIC_URL}/`} component={Demo}/>*/}
                     <Route exact path={`/`} component={Home}/>
+
+                    <Route exact path={`${process.env.PUBLIC_URL}/graphs`} component={Graphs}/>
 
                     <Route exact path={`${process.env.PUBLIC_URL}/defaultbadge`} component={Badge}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/defaultgroup`} component={Group}/>
