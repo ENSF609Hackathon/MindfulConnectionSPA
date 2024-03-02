@@ -1,8 +1,9 @@
 import React, {useState} from "react";
 import QuestionCardCMAI from '../components/QuestionCardCMAI';
+import { Link } from 'react-router-dom';
 
 function CMAI(){
-
+    // I need props.userID
     const [answers, setAnswers] = useState([])
 
     const setRating = (question, value) => {
@@ -18,6 +19,22 @@ function CMAI(){
 
         setAnswers([...filtered, newAnswer])
         console.log([...filtered, newAnswer])
+    }
+
+    const submitForm = (e) => {
+
+        let q1d = answers.find(o=> o.questionID === "Question 1D")
+        console.log(q1d);
+        let q1f = answers.find(o=> o.questionID === "Question 1F")
+        console.log(q1f);
+            if((typeof(q1d) !== 'undefined') && (typeof(q1f) !== 'undefined')){
+                fetch('http://localhost:8080/api/CMAI/CMAIForm/', {
+                method: 'POST',
+                headers: { "Content-Type": "application/json" },
+                // patientID = props.userID
+                body: JSON.stringify({"patientId": 2, "q1d": q1d.answerValue, "q1f": q1f.answerValue})
+            })  
+        }      
     }
 
     return (
@@ -60,7 +77,7 @@ function CMAI(){
             <QuestionCardCMAI id='Question 28' prompt='Making physical sexual advances' setRating={setRating}/>
             <QuestionCardCMAI id='Question 29' prompt='General Restlessness' setRating={setRating}/>
             <div className="container">
-                <button type='button' className='btn btn-primary mt-3 ml-3'>Submit</button>
+                <button type='button' className='btn btn-primary mt-3 ml-3' onClick={submitForm}><Link to='/Home'>Submit</Link></button>
             </div>
         </div>
     )
