@@ -40,8 +40,13 @@ import React from "react";
 import {useAuth0} from "@auth0/auth0-react";
 import Graphs from "./pages/Graphs";
 import Home from "./pages/Home";
+
+import Diary from "./pages/Diary";
+import HomepageResources from "./pages/Resources";
+
 import ProtectedRoute from "./auth/ProtectedRoute";
 import {UserRoles} from './auth/authTypes';
+import EducationalResources from "./pages/EducationalResources";
 
 
 const App = () => {
@@ -63,6 +68,10 @@ const App = () => {
             <Switch>
                 {/*<Route exact path={`${process.env.PUBLIC_URL}/`} component={Demo}/>*/}
                 <Route exact path={`/`} component={Home}/>
+
+                <Route exact path={`${process.env.PUBLIC_URL}/diary`} component={Diary}/>
+                <Route exact path={`${process.env.PUBLIC_URL}/resources`} component={HomepageResources}/>
+                <Route exact path={`${process.env.PUBLIC_URL}/educational_resources`} component={EducationalResources}/>
 
                 <Route exact path={`${process.env.PUBLIC_URL}/defaultbadge`} component={Badge}/>
                 <Route exact path={`${process.env.PUBLIC_URL}/defaultgroup`} component={Group}/>
