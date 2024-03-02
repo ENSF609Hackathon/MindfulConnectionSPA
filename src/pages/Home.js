@@ -30,14 +30,14 @@ class Home extends Component {
                         <div className="middle-sidebar-left">
                             <div className="col d-flex align-items-center">
                             <div className="row text-align-center">
-                            <Link to="\caring">
+                            <Link to={`${process.env.PUBLIC_URL}/caring`}>
                                 <div className="mx-auto feather-user-plus text-black bg p-3" style={{ fontSize: "800%"}}>
                                 <img className="mx-5" src="assets/images/caringlogo.png" alt="Your Feather Book Image" style={{ width: '50%', position: 'relative' }} />
                                 </div>
                             </Link>
                             </div>
                             <div className="row">
-                            <Link to="\knowledge">
+                            <Link to={`${process.env.PUBLIC_URL}/knowledge`}>
                             <div className="feather-book text-black bg p-3" style={{ fontSize: "800%"}}>
                                 <img className="mx-5" src="assets/images/knowledgelogo.png" alt="Your Feather User Plus Image" style={{ width: '50%', position: 'relative' }} />
                             </div>

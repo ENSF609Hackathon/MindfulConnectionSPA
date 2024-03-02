@@ -38,3 +38,5 @@ export const ResidenceList = () => {
 
     )
 };
+
+export default ResidenceList;

@@ -17,6 +17,10 @@ import Payment from "./pages/Payment";
 import Notification from "./pages/Notification";
 import Helpbox from "./pages/Helpbox";
 
+import {ResidenceList} from "./pages/ResidenceList";
+import {HomepageResources} from "./pages/Resources";
+import { MemoryMood } from "./pages/MemoryMood";
+
 import Register from "./pages/Register";
 import Forgot from "./pages/Forgot";
 import Notfound from "./pages/Notfound";
@@ -65,6 +69,10 @@ const App = () => {
                 {/*<Route exact path={`${process.env.PUBLIC_URL}/`} component={Demo}/>*/}
                 <Route exact path={`/`} component={Home}/>
                 <Route exact path={`/forum`} component={Forum}/>
+
+                <Route exact path={`/caring`} component={ResidenceList}/>
+                <Route exact path={'/memorymood'} component={MemoryMood}/>
+                <Route exact path={`${process.env.PUBLIC_URL}/knowledge`} component={HomepageResources}/>
 
                 <Route exact path={`${process.env.PUBLIC_URL}/defaultbadge`} component={Badge}/>
                 <Route exact path={`${process.env.PUBLIC_URL}/defaultgroup`} component={Group}/>
