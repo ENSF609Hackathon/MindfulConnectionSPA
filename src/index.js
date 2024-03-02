@@ -8,7 +8,7 @@ import './main.scss';
 import Demo from './demo/Demo';
 
 import Home from './pages/Home';
-
+import CMAI from './pages/CMAI'
 import Badge from './pages/Badge';
 import Group from './pages/Group';
 import Storie from './pages/Storie';
@@ -59,7 +59,7 @@ class Root extends Component{
           <BrowserRouter basename={'/'}>
               <Switch>
                     {/*<Route exact path={`${process.env.PUBLIC_URL}/`} component={Demo}/>*/}
-                    <Route exact path={`/`} component={Home}/>
+                    <Route exact path={`/`} component={CMAI}/>
 
                     <Route exact path={`${process.env.PUBLIC_URL}/defaultbadge`} component={Badge}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/defaultgroup`} component={Group}/>
